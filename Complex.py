@@ -21,7 +21,7 @@ def f(z):
 #Dziedzina:
 Dziedzina = 2 #Dla liczby n argumenty funkcji będą przyjmowały wartości takie, że
     #Re(z) należy do <-n, n>; Im(z) należy do <-n, n>
-LiczbaKroków = 100 #To jest aktualna wielkość tablicy przechowywującej liczby:
+LiczbaKrokow = 100 #To jest aktualna wielkość tablicy przechowywującej liczby:
     #Dla liczby n tablica będzie wielkości n x n - nie posiada informacji o wartościach
 
 #Skala:
@@ -119,16 +119,16 @@ def getColor(liczba):
 
 #Tworzy tablicę, która początkowo ma w sumie same liczby zespolone wg podanych na górze
 #   wartości
-varTab = [ [x for x in range(LiczbaKroków+1)] for y in range(LiczbaKroków+1)] #Początkowo zawiera liczby z R
-krok = (2*Dziedzina)/LiczbaKroków #Ile ma być dodawane co krok, aby się zgadzało
-for x in range(LiczbaKroków+1):
-    for y in range(LiczbaKroków+1):
+varTab = [ [x for x in range(LiczbaKrokow+1)] for y in range(LiczbaKrokow+1)] #Początkowo zawiera liczby z R
+krok = (2*Dziedzina)/LiczbaKrokow #Ile ma być dodawane co krok, aby się zgadzało
+for x in range(LiczbaKrokow+1):
+    for y in range(LiczbaKrokow+1):
         varTab[x][y] = (-Dziedzina + krok*x)*1j + (-Dziedzina + krok*y)  #Wypełnianie tablicy liczbami zespolonymi
 
 #Zamiana liczb zespolonych z tablicy na kolory - od razu w RGB: Używana jest dodatkowa Funkcja
 #   w zasadzie jedynie upraszaczjąca zapis w tym miejscu
-for x in range(LiczbaKroków+1):
-    for y in range(LiczbaKroków+1):
+for x in range(LiczbaKrokow+1):
+    for y in range(LiczbaKrokow+1):
         varTab[x][y] = getColor(varTab[x][y])
 
 #Włożenie tablicy z kolorami do wykresu
