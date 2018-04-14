@@ -1,7 +1,6 @@
 # DomainColoring
-Wykresy metodą kolorowania dziedziny w Pythonie
+Wykresy metodą kolorowania dziedziny w Pythonie. Lista rzeczy, które warto zmienić korzystając z kodu:
 -------------------------------------------------------------------------------------------------
-Rzeczy do łatwych zmian:
 
 # Dziedzina:
 liczby na płaszczyźnie zespolonej będą miały części rzeczywiste położone pomiędzy -Dziedzina a Dziedzina. Podobnie części zespolone. Tak więc - dla Dziedzina = 2 płaszczyzna pokaże wykres dla liczb od -2-2i do 2+2i
