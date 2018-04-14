@@ -13,7 +13,8 @@ def f(z):
 	#Poniższa linijka to funkcja, dalej są błędy możliwe do napotkania
         y = z**7 - 1
 
-    #Błąd dzielenia przez zero - daje wielką liczbę, bo granica dąży do +inf. - (3^40) + (3^40)*i
+    #Błąd dzielenia przez zero - daje wielką liczbę, bo granica dąży do inf. - (3^40) + (3^40)*i.
+    #Znak nie ma znaczenia, bo moduł będzie i tak ten sam - na tyle duży, że biały.
     except ZeroDivisionError:
         y = 3**40 + (3**40)*1j
     return y
