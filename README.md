@@ -1,5 +1,5 @@
 # DomainColoring
-Wykresy metodą kolorowania dziedziny w Pythonie. Lista rzeczy, które warto zmienić korzystając z kodu:
+Wykresy metodą kolorowania dziedziny w Pythonie. Nie oblicza poprawnie granic przy dzieleniu przez 0 - w tych miejscach wykresy są niepoprawne. Lista rzeczy, które warto zmienić korzystając z kodu:
 -------------------------------------------------------------------------------------------------
 
 # Dziedzina:
